@@ -2,7 +2,6 @@ import { projects } from './module.js';
 const main = document.getElementById('main');
 showProjects(projects);
 function showProjects(projects) {
-  main.innerHTML = '';
   projects.forEach((project, index) => {
     const { name } = project;
     const trim = name.toLowerCase().replace(/\s+/g, '');
